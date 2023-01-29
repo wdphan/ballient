@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: CC0-1.0
 pragma solidity ^0.8.13;
 
-import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
-import "./IERC5643.sol";
+import "lib/openzeppelin-contracts/contracts/token/ERC721/ERC721.sol";
+import "src/interface/IERC5643.sol";
 
 contract ERC5643 is ERC721, IERC5643 {
     mapping(uint256 => uint64) private _expirations;
