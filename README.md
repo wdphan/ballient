@@ -1,6 +1,6 @@
 # Ballient
 
-> Affiliate Marketing On-Chain
+> Subscription Model for Gradient Balls
 
 An generative on-chain NFT collection of gradient balls. Experimenting and playing with ERC-5643 (NFT subscriptions model) from [Unlock Protocol](https://unlock-protocol.com/). Do not use or mint, thanks!
 
