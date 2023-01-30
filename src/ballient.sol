@@ -1,10 +1,11 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.15;
 
-import "lib/openzeppelin-contracts/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 import "lib/openzeppelin-contracts/contracts/access/Ownable.sol";
+import "src/ERC5643.sol";
+import "lib/openzeppelin-contracts/contracts/token/ERC721/ERC721.sol";
 
-contract BallsOfArt is ERC721, Ownable {
+contract BallsOfArt is ERC721, Ownable, ERC5643 {
     // Structs
     struct Ball {
         uint x; // x coordinates of the top left corner
