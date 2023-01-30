@@ -5,7 +5,7 @@ import "lib/openzeppelin-contracts/contracts/access/Ownable.sol";
 import "src/ERC5643.sol";
 import "lib/openzeppelin-contracts/contracts/token/ERC721/ERC721.sol";
 
-contract BallsOfArt is ERC721, Ownable, ERC5643 {
+contract Ballient is ERC721, Ownable, ERC5643 {
     // Structs
     struct Ball {
         uint x; // x coordinates of the top left corner
@@ -348,7 +348,7 @@ contract BallsOfArt is ERC721, Ownable, ERC5643 {
                             abi.encodePacked(
                                 '{"name": "Balls of Art #',
                                 uint2str(tokenId),
-                                '", "description": "Balls of Art are an assortment of 111 fully on-chain, randomly generated, happy art balls", "attributes": "", "image":"data:image/svg+xml;base64,',
+                                '", "description": "Ballient are fully on-chain, randomly generated, gradient art balls", "attributes": "", "image":"data:image/svg+xml;base64,',
                                 Base64.encode(bytes(tokenIdToSvg[tokenId])),
                                 '"}'
                             )
